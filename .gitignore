@@ -1,0 +1,7 @@
+vendor
+bin
+.idea
+data
+logs
+tests/unit/.phpunit.result.cache
+tests/api-tests/.phpunit.result.cache

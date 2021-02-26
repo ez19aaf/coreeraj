@@ -1,0 +1,311 @@
+[
+    {
+        "id": 1,
+        "text": "Did you travel to Ghana in 2018?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "No"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Where did you travel from?",
+        "type": "SINGLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "UK"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "USA"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Europe"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "How much did your plane ticket cost?",
+        "withOther": true,
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Less than $500"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "$500-$1000"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "$1000- $2000"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "$2000 +"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "goto": null,
+        "text": "What are your thoughts on the price of the ticket and experience on the plane?",
+        "type": "OPEN_ENDED",
+        "keywords": [
+            "too expensive",
+            "affordable tickets",
+            "cheap flight"
+        ]
+    },
+    {
+        "id": 5,
+        "text": "What kind of accommodation did you stay in?",
+        "withOther": true,
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Hotel"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Airbnb"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Service apartment"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Family/ Friends home?"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "How did you get around?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Uber/ Taxify"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Taxi"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Public Transport (Tro Tro)"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Private Driver"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Drove my own vehicle"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "text": "Do you believe it was hard to get around Ghana? In regards to transport",
+        "type": "SINGLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "No"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "It was ok, but needs to be improved"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "text": "What types of activities did you do/attend?",
+        "type": "MULTIPLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Night/ Day parties"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Clubbing"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Networking"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Cultural experiences"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Visiting family"
+            },
+            {
+                "id": 6,
+                "goto": null,
+                "text": "Tourism"
+            },
+            {
+                "id": 7,
+                "goto": null,
+                "text": "Festival"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "text": "What was your reason for visiting Ghana?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Family/ Friends"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Cultural visit"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Recommendation"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "I wanted to party"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "text": "Was it easy to navigate your way around Ghana?",
+        "type": "SINGLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "No"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "goto": null,
+        "text": "What do you think can make Ghana a more attractive place to visit? (I.e Better transport, more tourist sites etc)",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 12,
+        "goto": null,
+        "text": "What kind of activities would you like to do if you visit again?",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 13,
+        "text": "Would you visit again?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "No"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "text": "Would you visit in 2019? And Why?",
+        "type": "SINGLE_CHOICE",
+        "withReason": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "No"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "goto": null,
+        "text": "On the scale of 1 to 10 how would you rate your experience?",
+        "type": "SCALE",
+        "scale": {
+            "from": 1,
+            "to": 10,
+            "fromName": "Poor",
+            "toName": "Excellent"
+        }
+    }
+]

@@ -1,0 +1,38 @@
+Scheme.xml
+----------
+Scheme.xml is the scheme used to maintain clean code formatting.
+
+Import into PhpStorm
+--------------------
+> File > Settings > Editor > Code Style > PHP > Scheme > Import Scheme > IntelliJ IDEA code style XML
+> Select 'Scheme.xml' > Click OK > To finish click Apply and OK
+
+NOTE: PLEASE DO FORMATTING EVERY TIME YOU WORK ON YOUR BRANCH
+MUST: ENSURE YOU DO FORMATTING BEFORE YOUR BRANCH IS MERGED TO MASTER
+
+Format File
+-----------
+> Open the .php file, Then go to > Code > Reformat Code
+
+Format Project (src)
+--------------------
+> Right click on src > Reformat Code > Under Options, check:
+    - Include subdirectories
+    - Optimize imports
+    - Cleanup code
+> Leave the rest unchecked > Click Run
+
+Format Project (tests)
+----------------------
+> Right click on tests > Follow the rest of instructions for src above
+
+Run lint check and fix
+----------------------
+make lint
+make cbf
+
+
+Disable error inspection for ExtendedException
+----------------------------------------------
+> File > Settings > Languages & Frameworks > PHP > Analysis > Unchecked Exceptions
+> Add \Survey54\Library\Exception\ExtendedException > To finish click Apply and OK

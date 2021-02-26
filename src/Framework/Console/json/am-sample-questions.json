@@ -1,0 +1,348 @@
+[
+    {
+        "id": 1,
+        "text": "Did you listen to the radio at all yesterday?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": -1,
+                "text": "No"
+            }
+        ],
+        "boundDate": "28-07-2020",
+        "boundTime": null
+    },
+    {
+        "id": 2,
+        "text": "Which times did you listen to the radio yesterday? SELECT ALL THAT APPLY",
+        "type": "MULTIPLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": 3,
+                "text": "6.00AM-8.00AM"
+            },
+            {
+                "id": 2,
+                "goto": 12,
+                "text": "8.00AM-10.00AM"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "10.00AM-12.00PM"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "12.00PM-2.00PM"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "2.00PM-4.00PM"
+            },
+            {
+                "id": 6,
+                "goto": null,
+                "text": "4.00PM-6.00PM"
+            },
+            {
+                "id": 7,
+                "goto": null,
+                "text": "6.00PM-8.00PM"
+            },
+            {
+                "id": 8,
+                "goto": null,
+                "text": "8.00PM-10.00PM"
+            }
+        ],
+        "boundDate": "28-07-2020",
+        "boundTime": "6.00AM-10.00PM"
+    },
+    {
+        "id": 3,
+        "text": "Which times did you listen to the radio yesterday between 6-8AM? SELECT ALL THAT APPLY",
+        "type": "MULTIPLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": 4,
+                "text": "6.00AM-6.15AM"
+            },
+            {
+                "id": 2,
+                "goto": 5,
+                "text": "6.15AM-6.30AM"
+            },
+            {
+                "id": 3,
+                "goto": 6,
+                "text": "6.30AM-6.45AM"
+            },
+            {
+                "id": 4,
+                "goto": 7,
+                "text": "6.45AM-7AM"
+            },
+            {
+                "id": 5,
+                "goto": 8,
+                "text": "7.00AM-7.15AM"
+            },
+            {
+                "id": 6,
+                "goto": 9,
+                "text": "7.15AM-7.30AM"
+            },
+            {
+                "id": 7,
+                "goto": 10,
+                "text": "7.30AM-7.45AM"
+            },
+            {
+                "id": 8,
+                "goto": 11,
+                "text": "7.45AM-8.00AM"
+            }
+        ],
+        "boundDate": "28-07-2020",
+        "boundTime": "6.00AM-8.00AM",
+        "repeatTemplate": "What Radio Station did you listen to between {{optionText}}? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "repeatOnOptions": true
+    },
+    {
+        "id": 4,
+        "text": "What Radio Station did you listen to between 6.00AM-6.15AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "6.00AM-6.15AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 5,
+        "text": "What Radio Station did you listen to between 6.15AM-6.30AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "6.15AM-6.30AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 6,
+        "text": "What Radio Station did you listen to between 6.30AM-6.45AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "6.30AM-6.45AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 7,
+        "text": "What Radio Station did you listen to between 6.45AM-7AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "6.45AM-7AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 8,
+        "text": "What Radio Station did you listen to between 7.00AM-7.15AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "7.00AM-7.15AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 9,
+        "text": "What Radio Station did you listen to between 7.15AM-7.30AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "7.15AM-7.30AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 10,
+        "text": "What Radio Station did you listen to between 7.30AM-7.45AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "7.30AM-7.45AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 11,
+        "text": "What Radio Station did you listen to between 7.45AM-8.00AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "7.45AM-8.00AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 12,
+        "text": "Which times did you listen to the radio yesterday between 8-10AM? SELECT ALL THAT APPLY",
+        "type": "MULTIPLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": 13,
+                "text": "8.00AM-8.15AM"
+            },
+            {
+                "id": 2,
+                "goto": 14,
+                "text": "8.15AM-8.30AM"
+            },
+            {
+                "id": 3,
+                "goto": 15,
+                "text": "8.30AM-8.45AM"
+            },
+            {
+                "id": 4,
+                "goto": 16,
+                "text": "8.45AM-9AM"
+            },
+            {
+                "id": 5,
+                "goto": 17,
+                "text": "9.00AM-9.15AM"
+            },
+            {
+                "id": 6,
+                "goto": 18,
+                "text": "9.15AM-9.30AM"
+            },
+            {
+                "id": 7,
+                "goto": 19,
+                "text": "9.30AM-9.45AM"
+            },
+            {
+                "id": 8,
+                "goto": 20,
+                "text": "9.45AM-10AM"
+            }
+        ],
+        "boundDate": "28-07-2020",
+        "boundTime": "8.00AM-10.00AM",
+        "repeatTemplate": "What Radio Station did you listen to between {{optionText}}? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "repeatOnOptions": true
+    },
+    {
+        "id": 13,
+        "text": "What Radio Station did you listen to between 8.00AM-8.15AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "8.00AM-8.15AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 14,
+        "text": "What Radio Station did you listen to between 8.15AM-8.30AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "8.15AM-8.30AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 15,
+        "text": "What Radio Station did you listen to between 8.30AM-8.45AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "8.30AM-8.45AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 16,
+        "text": "What Radio Station did you listen to between 8.45AM-9AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "8.45AM-9AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 17,
+        "text": "What Radio Station did you listen to between 9.00AM-9.15AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "9.00AM-9.15AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 18,
+        "text": "What Radio Station did you listen to between 9.15AM-9.30AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "9.15AM-9.30AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 19,
+        "text": "What Radio Station did you listen to between 9.30AM-9.45AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "9.30AM-9.45AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    },
+    {
+        "id": 20,
+        "text": "What Radio Station did you listen to between 9.45AM-10AM? Reply with the name of the station. If it?s the same station as your last reply, then reply \"Same\"",
+        "type": "OPEN_ENDED",
+        "options": null,
+        "boundDate": "28-07-2020",
+        "boundTime": "9.45AM-10AM",
+        "repeatTemplate": null,
+        "repeatOnOptions": false,
+        "goto": null
+    }
+]

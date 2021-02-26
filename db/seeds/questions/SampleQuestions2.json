@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "type": "SINGLE_CHOICE",
+        "text": "Have you driven a car before?",
+        "options": [
+            {
+                "id": 1,
+                "text": "Yes",
+                "goto": 2
+            },
+            {
+                "id": 2,
+                "text": "No",
+                "goto": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "MULTIPLE_CHOICE",
+        "text": "Select which cars you have driven?",
+        "options": [
+            {
+                "id": 1,
+                "text": "Audi",
+                "goto": null
+            },
+            {
+                "id": 2,
+                "text": "BMW",
+                "goto": null
+            },
+            {
+                "id": 3,
+                "text": "Volvo",
+                "goto": null
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "OPEN_ENDED",
+        "text": "What is your opinion on driving?",
+        "goto": null
+    }
+]

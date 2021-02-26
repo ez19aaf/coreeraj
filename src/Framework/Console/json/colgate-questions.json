@@ -1,0 +1,312 @@
+[
+    {
+        "id": 1,
+        "goto": null,
+        "text": "Why do you use toothpaste? (sensitivity, fresh breath, gum protection - capture all reasons)",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 2,
+        "text": "What brand of toothpaste do you buy most often?",
+        "type": "SINGLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Aquafresh"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Colgate"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Close-up"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Oral B"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Sensodyne"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "goto": null,
+        "text": "What made you first try this brand?",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 4,
+        "goto": null,
+        "text": "What do you like about your toothpaste packaging?",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 5,
+        "text": "If you did not buy your current toothpaste brand, which brand would you switch to and why?",
+        "type": "SINGLE_CHOICE",
+        "withReason": true,
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Aquafresh"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Colgate"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Close-up"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Oral B"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Sensodyne"
+            },
+            {
+                "id": 6,
+                "goto": null,
+                "text": "Will NOT switch"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "Which stores do you shop at for toothpaste and personal care specifically?",
+        "type": "SINGLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Clicks"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Checkers"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Dischem"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "PnP"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Shoprite"
+            },
+            {
+                "id": 6,
+                "goto": null,
+                "text": "Spar"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "goto": null,
+        "text": "Why do you shop at these stores? (Range, store experience, promo, price)",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 8,
+        "text": "Do you buy the same toothpaste brand for yourself and your family, or is it different brands for different members?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": 10,
+                "text": "Same Brands"
+            },
+            {
+                "id": 2,
+                "goto": 9,
+                "text": "Different Brands"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "text": "Specify the other brands you purchase (based on question 8)",
+        "type": "MULTIPLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Aquafresh"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Colgate"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Close-up"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Oral B"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Sensodyne"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "text": "How often do you buy toothpaste?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "More often than once a month"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "Once a Month"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "Once in 2-3 months"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "Once in 4-6 months"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "Once a year or less often"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "text": "How many toothpaste tubes do you buy each time you shop?",
+        "type": "SINGLE_CHOICE",
+        "withOther": true,
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "1 tube"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "2 tubes"
+            },
+            {
+                "id": 3,
+                "goto": null,
+                "text": "3 tubes"
+            },
+            {
+                "id": 4,
+                "goto": null,
+                "text": "4 tubes"
+            },
+            {
+                "id": 5,
+                "goto": null,
+                "text": "5 tubes"
+            },
+            {
+                "id": 6,
+                "goto": null,
+                "text": "6 tubes"
+            },
+            {
+                "id": 7,
+                "goto": null,
+                "text": "7 tubes"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "text": "Do you buy toothpaste on promotion or non-promotion?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": -1,
+                "text": "Non-promotion"
+            },
+            {
+                "id": 2,
+                "goto": 13,
+                "text": "Promotion"
+            },
+            {
+                "id": 3,
+                "goto": 13,
+                "text": "Both"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "goto": null,
+        "text": "Where did you hear about the promotion?",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 14,
+        "goto": null,
+        "text": "Can you tell me a little more about the promotion and how it is communicated? (e.g. 3 for 2, online promotion, catalogue, discount, bundle buys)",
+        "type": "OPEN_ENDED"
+    },
+    {
+        "id": 15,
+        "text": "Would you consider buying on promotion even if you don’t need the product at that point in time?",
+        "type": "SINGLE_CHOICE",
+        "options": [
+            {
+                "id": 1,
+                "goto": null,
+                "text": "Yes"
+            },
+            {
+                "id": 2,
+                "goto": null,
+                "text": "No"
+            }
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+web:
+    container_name: reap_web_1
+    image: nginx:latest
+    ports:
+        - "8082:82"
+    volumes:
+        - .:/var/www/web
+        - ./docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
+    links:
+        - php
+        - mysqldb
+php:
+    container_name: reap_php_1
+    volumes:
+        - .:/var/www/web
+    build: .
+    dockerfile: docker/php/Dockerfile
+    links:
+        - mysqldb
+mysqldb:
+    container_name: reap_mysqldb_1
+    image: mysql:8.0
+    command:
+        - "--default-authentication-plugin=mysql_native_password"
+        - "--innodb_use_native_aio=0"
+    volumes:
+        - ./data:/var/lib/mysql
+        - ./docker/mysql/:/docker-entrypoint-initdb.d
+    environment:
+        MYSQL_DATABASE: reap
+        MYSQL_USER: survey54
+        MYSQL_PASSWORD: survey54
+        MYSQL_ROOT_PASSWORD: root
+    ports:
+        - "3306:3306"

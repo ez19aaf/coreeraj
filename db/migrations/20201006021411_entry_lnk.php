@@ -1,0 +1,32 @@
+<?php
+declare(strict_types=1);
+
+use Phinx\Migration\AbstractMigration;
+use Survey54\Library\Domain\Values\IntegrationType;
+
+final class EntryLnk extends AbstractMigration
+{
+    /**
+     * Change Method.
+     *
+     * Write your reversible migrations using this method.
+     *
+     * More information on writing migrations is available here:
+     * https://book.cakephp.org/phinx/0/en/migrations.html#the-change-method
+     *
+     * Remember to call "create()" or "update()" and NOT "save()" when working
+     * with the Table class.
+     */
+    public function change(): void
+    {
+        $r = $this->table('respondent_survey');
+        if (!$r->hasColumn('entryLink')) {
+            $r->addColumn('entryLink', 'string', ['null' => true, 'after' => 'gotoMap'])
+                ->update();
+        }
+        if (!$r->hasColumn('integrationType')) {
+            $r->addColumn('integrationType', 'enum', ['null' => true, 'values' => IntegrationType::toArray(), 'after' => 'entryLink'])
+                ->update();
+        }
+    }
+}

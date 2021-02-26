@@ -1,0 +1,237 @@
+{
+    "initialValue": -0.810519,
+    "options": [
+        {
+            "id": "i14",
+            "name": "Metropolitan dweller (250 000+)",
+            "value": 0.185224,
+            "operator": "+"
+        },
+        {
+            "id": "i15",
+            "name": "DVD Player / Blu Ray Player",
+            "value": 0.149009,
+            "operator": "+"
+        },
+        {
+            "id": "i24",
+            "name": "Living in a non-urban area",
+            "value": 0.163220,
+            "operator": "+"
+        },
+        {
+            "id": "i22",
+            "name": "Refrigerator or combined fridge/freezer",
+            "value": 0.311118,
+            "operator": "+"
+        },
+        {
+            "id": "i13",
+            "name": "House / Cluster House / Town House",
+            "value": 0.245001,
+            "operator": "-"
+        },
+        {
+            "id": "i3",
+            "name": "Electric Stove",
+            "value": 0.301327,
+            "operator": "-"
+        },
+        {
+            "id": "i20",
+            "name": "Tap water in house / on plot",
+            "value": 0.113306,
+            "operator": "+"
+        },
+        {
+            "id": "i11",
+            "name": "Microwave oven",
+            "value": 0.120813,
+            "operator": "+"
+        },
+        {
+            "id": "i7",
+            "name": "Flush Toilet inside house",
+            "value": 0.167310,
+            "operator": "+"
+        },
+        {
+            "id": "i23",
+            "name": "Deep Freezer - Free Standing",
+            "value": 0.164736,
+            "operator": "+"
+        },
+        {
+            "id": "i1",
+            "name": "Hot running water",
+            "value": 0.126409,
+            "operator": "+"
+        },
+        {
+            "id": "i2",
+            "name": "Have a washing machine",
+            "value": 0.127360,
+            "operator": "+"
+        },
+        {
+            "id": "i25",
+            "name": "Built in Kitchen Sink",
+            "value": 0.113907,
+            "operator": "+"
+        },
+        {
+            "id": "i16",
+            "name": "Have a tumble dryer",
+            "value": 0.079321,
+            "operator": "+"
+        },
+        {
+            "id": "i6",
+            "name": "No Domestic Workers or Gardeners",
+            "value": 0.096070,
+            "operator": "+"
+        },
+        {
+            "id": "i28",
+            "name": "Dishwashing Machine",
+            "value": 0.166056,
+            "operator": "+"
+        },
+        {
+            "id": "i21",
+            "name": "Home security service",
+            "value": 0.184676,
+            "operator": "+"
+        },
+        {
+            "id": "i12",
+            "name": "PayTV (M-net / DSTV / TopTV) Subscription",
+            "value": 0.124007,
+            "operator": "+"
+        },
+        {
+            "id": "i18",
+            "name": "2 Cellphones in Household",
+            "value": 0.166031,
+            "operator": "+"
+        },
+        {
+            "id": "i26",
+            "name": "Home Theatre System",
+            "value": 0.123015,
+            "operator": "+"
+        },
+        {
+            "id": "i17",
+            "name": "3 or more Cellphones in Household",
+            "value": 0.151623,
+            "operator": "+"
+        },
+        {
+            "id": "i10",
+            "name": "Vacuum Cleaner",
+            "value": 0.134133,
+            "operator": "+"
+        },
+        {
+            "id": "i5",
+            "name": "Zero or One Radio set in Household",
+            "value": 0.116673,
+            "operator": "+"
+        },
+        {
+            "id": "i9",
+            "name": "Motor Vehicle in Household",
+            "value": 0.129361,
+            "operator": "-"
+        },
+        {
+            "id": "i29",
+            "name": "Air conditioner (excl. fans)",
+            "value": 0.132822,
+            "operator": "+"
+        },
+        {
+            "id": "i4",
+            "name": "Computer - Desktop / Laptop",
+            "value": 0.096072,
+            "operator": "+"
+        },
+        {
+            "id": "i8",
+            "name": "Have TV set(s)",
+            "value": 0.104531,
+            "operator": "+"
+        },
+        {
+            "id": "i27",
+            "name": "Land line (excl. Cellphone)",
+            "value": 0.212562,
+            "operator": "+"
+        },
+        {
+            "id": "i19",
+            "name": "Swimming Pool",
+            "value": 0.178044,
+            "operator": "+"
+        }
+    ],
+    "summary": [
+        {
+            "value": 2.08,
+            "text": "LSM 10 High"
+        },
+        {
+            "value": 2.079999,
+            "text": "LSM 10 Low"
+        },
+        {
+            "value": 1.745000,
+            "text": "LSM 9 High"
+        },
+        {
+            "value": 1.418000,
+            "text": "LSM 9 Low"
+        },
+        {
+            "value": 1.169000,
+            "text": "LSM 8 High"
+        },
+        {
+            "value": 0.977000,
+            "text": "LSM 8 Low"
+        },
+        {
+            "value": 0.801000,
+            "text": "LSM 7 High"
+        },
+        {
+            "value": 0.583000,
+            "text": "LSM 7 Low"
+        },
+        {
+            "value": 0.382000,
+            "text": "LSM 6"
+        },
+        {
+            "value": -0.278000,
+            "text": "LSM 5"
+        },
+        {
+            "value": -0.691000,
+            "text": "LSM 4"
+        },
+        {
+            "value": -1.011800,
+            "text": "LSM 3"
+        },
+        {
+            "value": -1.242000,
+            "text": "LSM 2"
+        },
+        {
+            "value": -1.390140,
+            "text": "LSM 1"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         bootstrap="../../vendor/autoload.php">
+
+    <testsuites>
+        <testsuite name="reap">
+            <directory>Application</directory>
+            <directory>Domain</directory>
+            <directory>Framework</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
+            <directory>../../src/</directory>
+            <exclude>
+                <file>../../src/console.php</file>
+                <file>../../src/init.php</file>
+                <directory>../../src/Application/assets</directory>
+                <directory>../../src/Framework/Console</directory>
+                <directory>../../src/Framework/Middleware</directory>
+                <directory>../../src/Framework/Route</directory>
+                <directory>../../src/Framework/ServiceProvider</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true" highLowerBound="10"/>
+        <!--<log type="coverage-clover" target="/tmp/coverage.xml" highLowerBound="10" />-->
+    </logging>
+</phpunit>

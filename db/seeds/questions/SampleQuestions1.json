@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "type": "OPEN_ENDED",
+        "text": "What is your Job?",
+        "goto": 2
+    },
+    {
+        "id": 2,
+        "type": "SINGLE_CHOICE",
+        "text": "What is your annual salary category?",
+        "media": {
+            "type": "VIDEO",
+            "resource": "orgId_surId_qId.mp4",
+            "supplement": false
+        },
+        "options": [
+            {
+                "id": 1,
+                "text": "above 45000",
+                "goto": 3
+            },
+            {
+                "id": 2,
+                "text": "40000 to 45000",
+                "goto": 3
+            },
+            {
+                "id": 3,
+                "text": "below 40000",
+                "goto": 3
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "MULTIPLE_CHOICE",
+        "text": "Which are your top key factors when applying for a job?",
+        "options": [
+            {
+                "id": 1,
+                "text": "good work culture",
+                "goto": null
+            },
+            {
+                "id": 2,
+                "text": "salary",
+                "goto": null
+            },
+            {
+                "id": 3,
+                "text": "location",
+                "goto": null
+            },
+            {
+                "id": 4,
+                "text": "flexibility of hours",
+                "goto": null
+            }
+        ]
+    }
+]

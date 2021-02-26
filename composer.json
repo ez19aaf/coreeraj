@@ -1,0 +1,60 @@
+{
+    "name": "survey54/reap",
+    "type": "web",
+    "description": "The Survey54 reap backend service.",
+    "keywords": [
+        "survey54",
+        "web"
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "version": "v2.1.31",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dr Samuel Chinenyeze",
+            "email": "samuel@survey54.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Survey54\\Reap\\": "src",
+            "Tests\\Unit\\": "tests/unit",
+            "Tests\\ApiTest\\": "tests/api-tests"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.4"
+        },
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:s54-backend/shared-library.git"
+        }
+    ],
+    "require": {
+        "php": "7.4",
+        "ext-PDO": "*",
+        "ext-gd": "*",
+        "ext-json": "*",
+        "africastalking/africastalking": "^2.4",
+        "nategood/commando": "^0.4.0",
+        "phpoffice/phppresentation": "^0.9.0",
+        "phpoffice/phpspreadsheet": "^1.14",
+        "robmorgan/phinx": "^0.12.3",
+        "samchristy/piechart": "^2.0",
+        "setasign/fpdf": "^1.8",
+        "survey54/shared-library": "^1.2",
+        "vlucas/phpdotenv": "^5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2",
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "^3.5"
+    }
+}

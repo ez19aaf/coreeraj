@@ -1,0 +1,100 @@
+image: registry.gitlab.com/s54-backend/reap:latest
+
+stages:
+  - setup
+  - lint-test
+  - unit-test
+  - api-test
+  - deploy
+
+cache:
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - vendor/
+  policy: pull
+
+.branch-tmpl:
+  only:
+    - /^rea-[A-Za-z0-9]+(-|()[A-Za-z0-9]+)*$/
+    - master
+#########################################################################
+
+install-composer-deps:
+  stage: setup
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - vendor/
+    policy: push
+  script:
+    - time make ci-install-composer-deps
+  extends: .branch-tmpl
+#########################################################################
+
+run-lint-test:
+  stage: lint-test
+  script:
+    - time make ci-run-lint-test
+  extends: .branch-tmpl
+#########################################################################
+
+run-unit-test:
+  stage: unit-test
+  script:
+    - time make ci-run-unit-test
+  extends: .branch-tmpl
+#########################################################################
+
+run-api-test:
+  stage: api-test
+  services:
+    - name: mysql:8.0
+      alias: mysqldb
+      command: ["--default-authentication-plugin=mysql_native_password"]
+  variables:
+    ENVIRONMENT: testing
+    MYSQL_DATABASE: reap
+    MYSQL_USER: survey54
+    MYSQL_PASSWORD: survey54
+    MYSQL_ROOT_PASSWORD: root
+  script:
+    - time make ci-load-db
+    - time make ci-run-api-test
+  extends: .branch-tmpl
+#########################################################################
+
+.deploy-tmpl:
+  before_script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - time make ci-load-env
+    - time make ci-deploy-app
+  allow_failure: false
+#########################################################################
+
+deploy-staging:
+  stage: deploy
+  variables:
+    ENVIRONMENT: staging
+  extends: .deploy-tmpl
+  only:
+    - master
+#########################################################################
+
+deploy-production:
+  stage: deploy
+  variables:
+    ENVIRONMENT: production
+  extends: .deploy-tmpl
+  except:
+    - /^failed-.*$/
+    - pipelines
+  when: on_success
+  only:
+    refs:
+      - /^v([0-9]+.)?([0-9]+.)?([0-9]+)$/
+#########################################################################
